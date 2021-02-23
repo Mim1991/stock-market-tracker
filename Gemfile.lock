@@ -88,6 +88,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.6)
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
@@ -95,10 +97,23 @@ GEM
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.14.2)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
     font-awesome-sass (5.15.1)
       sassc (>= 1.11)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    http (4.4.1)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      http-parser (~> 1.2.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
+    http-parser (1.2.2)
+      ffi-compiler
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -212,6 +227,9 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.1.0)
@@ -246,6 +264,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   font-awesome-sass
+  http
   jbuilder (~> 2.7)
   listen (~> 3.3)
   pg (~> 1.1)
